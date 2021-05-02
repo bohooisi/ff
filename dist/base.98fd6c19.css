@@ -10,17 +10,18 @@
 
 body {
     margin: 0;
-    --color-text: #644B47;
-    --color-bg: #0F0E0E;
-    --color-link: #fff;
-    --color-link-hover: #3d3637;
+    --color-text: #b38f00;
+    --text-align: center;
+    --color-bg: #540000;
+    --color-link: rgb(140, 49, 0);
+    --color-link-hover: #e4cb09;
     color: var(--color-text);
     background-color: var(--color-bg);
     font-family: soleil, sans-serif;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* Cursor styles */
-	--cursor-stroke: #644B47;
+	--cursor-stroke: #d3ae51;
 	--cursor-fill: none;
 	--cursor-stroke-width: 1px;
 }
@@ -49,7 +50,7 @@ body {
     margin: -30px 0 0 -30px;
     border-radius: 50%;
     opacity: 0.4;
-    background: var(--color-link);
+    background-color:#d3ae51;
     animation: loaderAnim 0.7s linear infinite alternate forwards;
 
 }
@@ -71,6 +72,7 @@ a:hover,
 a:focus {
     color: var(--color-link-hover);
     outline: none;
+    background-color:#d3ae51;
 }
 
 .message {
@@ -90,7 +92,8 @@ a:focus {
 .frame__title {
     font-size: 1rem;
     margin: 0 0 1rem;
-    font-weight: 300;
+    font-weight: 400;
+    background-color:#d3ae51;
 }
 
 .frame__links {
@@ -123,17 +126,17 @@ a:focus {
     grid-template-rows: repeat(8,1fr);
     grid-gap: 1vw;
     position: relative;
-}
+    }
 
 .grid::after {
 	content: '';
 	height: 6rem;
 	width: 1px;
-	background: #fff;
+	background-color: #d3ae5; 
 	position: absolute;
 	bottom: 2rem;
 	left: 50%;
-}
+    }
 
 .intro .grid::after {
 	display: none;
@@ -145,6 +148,7 @@ a:focus {
     opacity: 0;
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
+
 }
 
 .grid__item--a {
@@ -179,6 +183,8 @@ a:focus {
     align-self: center;
     justify-self: start;
     position: relative;
+   
+   
 }
 
 .menu__item {
@@ -190,6 +196,7 @@ a:focus {
     --title-display: none;
 	--subtitle-display: none;
 	pointer-events: none;
+
 }
 
 .menu__item-title {
@@ -200,10 +207,12 @@ a:focus {
     color: var(--color-title);
     margin: 0;
     display: var(--title-display);
+    
+   
 }
 
 .menu__item-subtitle {
-    font-family: meno-banner, serif;
+    font-family: fantasy, serif;
     color: var(--color-subtitle);
     text-align: right;
     margin: 0 -3rem 0 0;
@@ -212,29 +221,31 @@ a:focus {
 }
 
 .menu__item--current {
-	--color-title: #fff;
-    --color-subtitle: #644B47;
+	--color-title: #d3ae51;
+    --color-subtitle: #ffffff;
     --title-font-style: italic;
-    --title-font-weight: 900;
+    --title-font-weight: 950;
     cursor: pointer;
 	--title-display: block;
-	--title-font-size: 9vw;
+	--title-font-size: 15vw;
+    
 }
 
 .intro .menu__item--current::before {                
-    content: '01';
     position: absolute;
     bottom: 110%;
     color: var(--color-title);
+    
 }
 
 .intro .menu__item--current:hover {
 	--color-title: #fff;
     --color-subtitle: #88524a;
+    
 }
 
 .intro .menu__item--current {
-	--color-title: #e5e2e2;
+	--color-title: #ffffff;
 	--title-font-style: normal;
 	--title-font-size: 7vw;
 	pointer-events: auto;

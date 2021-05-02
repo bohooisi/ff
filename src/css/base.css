@@ -11,7 +11,7 @@
 body {
     margin: 0;
     --color-text: #644B47;
-    --color-bg: #0F0E0E;
+    --color-bg: #7e0f52;
     --color-link: #fff;
     --color-link-hover: #3d3637;
     color: var(--color-text);
@@ -200,6 +200,7 @@ a:focus {
     color: var(--color-title);
     margin: 0;
     display: var(--title-display);
+    
 }
 
 .menu__item-subtitle {
@@ -231,6 +232,7 @@ a:focus {
 .intro .menu__item--current:hover {
 	--color-title: #fff;
     --color-subtitle: #88524a;
+   ';
 }
 
 .intro .menu__item--current {
